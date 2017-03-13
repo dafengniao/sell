@@ -9,21 +9,21 @@
 					</div>
 				</li>
 				<li class="childcell">
-					<div class="menuicon" @click="goPuch({path: '/search'})" :class="$route.path.indexOf('search') !== -1? 'active' : '' ">
-						<div class="choice img"></div>
-						精选
+					<div class="menuicon" @click="goPuch({path: '/shop'})" v-bind:class="$route.path.indexOf('shop') !== -1? 'active' : '' ">
+						<div class="find img"></div>
+						找货
 					</div>
 				</li>
 				<li class="childcell">
-					<div class="menuicon" @click="goPuch({path: '/home'})">
-						<div class="choice img" v-bind:class="$route.path.indexOf('home') !== -1? 'actove' : '' "></div>
-						精选
+					<div class="menuicon" @click="goPuch({path: '/cart'})" v-bind:class="$route.path.indexOf('cart') !== -1? 'active' : '' ">
+						<div class="cart img"></div>
+						购物车
 					</div>
 				</li>
 				<li class="childcell">
-					<div class="menuicon" @click="goPuch({path: '/home'})">
-						<div class="choice img" v-bind:class="$route.path.indexOf('home') !== -1? 'actove' : '' "></div>
-						精选
+					<div class="menuicon" @click="goPuch({path: '/user'})" v-bind:class="$route.path.indexOf('user') !== -1? 'active' : '' ">
+						<div class="owner img"></div>
+						我的
 					</div>
 				</li>
 			</ul>
@@ -81,7 +81,22 @@
     width: 0.533333rem;
     background-position: 0 0;
 	}
-	.menuicon.active .choice.img {
+	.menuicon.active .img {
     background-image: url(https://s3.taihuoniao.com/images/fiushop/sfooter2.png);
+	}
+	.menuicon .img.find {
+    height: 0.48rem;
+    width: 0.693333rem;
+    background-position: -1.68rem 0.08rem;
+	}
+	.menuicon .img.cart {
+    height: 0.48rem;
+    width: 0.586667rem;
+    background-position: -0.533333rem 0;
+	}
+	.menuicon .img.owner {
+    height: 0.48rem;
+    width: 0.56rem;
+    background-position: -1.12rem 0;
 	}
 </style>

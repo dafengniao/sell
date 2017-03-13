@@ -11,6 +11,7 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/home',
       component: pages('home')
     },
     {
@@ -20,6 +21,18 @@ export default new Router({
     {
       path: '/search',
       component: pages('search')
+    },
+    {
+      path: '/shop',
+      component: pages('shop')
+    },
+    {
+      path: '/cart',
+      component: pages('cart')
+    },
+    {
+      path: '/user',
+      component: pages('user')
     }
   ]
 });
