@@ -2,7 +2,7 @@
 	<div>
 		<div class="home-header">
 	    <img src="https://s3.taihuoniao.com/images/icon/ffflogo.png">
-	    <div class="home-input">
+	    <div class="home-input" v-on:click="Select">
 	    </div>
 	  </div>
     <div class="page-swipe">
@@ -42,6 +42,13 @@
           }
         ]
       };
+    },
+    methods: {
+      Select() {
+        this.$router.push({
+          path: '/search'
+        });
+      }
     }
   };
 </script>

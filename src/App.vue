@@ -35,6 +35,9 @@
 </script>
 
 <style>
+  body{
+    background: #f5f5f5;
+  }
  .page-toast-wrapper {
     padding: 0 0.533333rem;
   }

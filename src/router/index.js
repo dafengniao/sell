@@ -12,6 +12,14 @@ export default new Router({
     {
       path: '/',
       component: pages('home')
+    },
+    {
+      path: '/home',
+      component: pages('home')
+    },
+    {
+      path: '/search',
+      component: pages('search')
     }
   ]
 });
