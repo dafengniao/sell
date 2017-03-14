@@ -33,6 +33,10 @@ export default new Router({
     {
       path: '/user',
       component: pages('user')
+    },
+    {
+      path: '*',
+      component: pages('nofound')
     }
   ]
 });
