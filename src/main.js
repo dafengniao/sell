@@ -18,17 +18,6 @@ if ('addEventListener' in document) {
 
 Vue.use(Mint);
 
-router.beforeEach(({meta, path}, from, next) => {
-  var { auth = true } = meta;
-  var isLogin = Boolean(store.state.token);
-  // true用户已登录， false用户未登录
-  if (auth && !isLogin) {
-    console.log(123);
-    // return next({ path: '/login' });
-  }
-  next();
-});
-
 /* eslint-disable no-new */
 new Vue({
   router,

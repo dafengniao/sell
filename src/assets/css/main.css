@@ -41,3 +41,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.mint-header .mintui.mintui-back{
+	font-size: 0.48rem;
+}
+.mint-header .mint-button-icon{
+	margin-top: -0.03rem;
+}

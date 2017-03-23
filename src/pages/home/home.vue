@@ -29,6 +29,7 @@
   import footer from '../../components/footer/footer';
   import spinner from '../../components/spinner/spinner.vue';
   import {indexSlide} from '../../api/api';
+  import store from '../../store/';
 
   export default {
     components: {
@@ -51,9 +52,13 @@
     },
     methods: {
       Select() {
-        this.$router.push({
-          path: '/search'
-        });
+        var isLogin = Boolean(store.state.token);
+        if (!isLogin) {
+          console.log('为登陆');
+        };
+        // this.$router.push({
+        //   path: '/search'
+        // });
       },
       goShop(e) {
         console.log(e.target);

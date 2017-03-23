@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import store from '../store';
 
 Vue.use(Router);
 
@@ -28,11 +29,23 @@ export default new Router({
     },
     {
       path: '/cart',
-      component: pages('cart')
+      component: pages('cart'),
+      beforeEnter: (to, from, next) => {
+        var isLogin = Boolean(store.state.token);
+        // true用户已登录， false用户未登录
+        if (!isLogin) {
+          return next({ path: '/login' });
+        }
+        next();
+      }
     },
     {
       path: '/user',
       component: pages('user')
+    },
+    {
+      path: '/login',
+      component: pages('login')
     },
     {
       path: '*',
