@@ -1,4 +1,4 @@
 module.exports = {
   NODE_ENV: '"production"',
-  API_ROOT: '"http://t.taihuoniao.com/app/w_api/"'
+  // API_ROOT: '"https://m.taihuoniao.com/app/w_api/"'
 }

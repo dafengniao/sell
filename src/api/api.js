@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // 使用代理
-const HOST = process.env.API_ROOT;
-
+// const HOST = process.env.API_ROOT;
+const HOST = '/api/';
 export function fetch(url) {
   return new Promise((resolve, reject) => {
     axios.get(HOST + url)
