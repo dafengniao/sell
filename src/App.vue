@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <transition name="router-fade" mode="out-in">
+    <!-- <transition name="router-fade" mode="out-in"> -->
       <router-view></router-view>
-    </transition>
+    <!-- </transition> -->
     <!-- <router-view class="child-view" name="main"></router-view>
     <v-header></v-header>
     <div class="tab">
@@ -35,6 +35,9 @@
 </script>
 
 <style>
+  body{
+    background: #f5f5f5;
+  }
  .page-toast-wrapper {
     padding: 0 0.533333rem;
   }

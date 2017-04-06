@@ -6,6 +6,7 @@ import '../config/rem';
 import './assets/css/main.css';
 import 'mint-ui/lib/style.css';
 import router from './router';
+import store from './store/';
 import App from './App';
 import FastClick from 'fastclick';
 
@@ -20,5 +21,6 @@ Vue.use(Mint);
 /* eslint-disable no-new */
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app');
